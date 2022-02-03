@@ -19,6 +19,7 @@ class MainCoordinator: NSObject, Coordinator {
         super.init()
 
         self.navigationController.delegate = self
+        print("[MM][C][+] INIT: \(String(describing: self))")
     }
 
     func start() {
@@ -29,7 +30,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
 
     deinit {
-        print("---- DEINIT: \(String(describing: self))")
+        print("[MM][C][-] DEINIT: \(String(describing: self))")
     }
 }
 

@@ -9,6 +9,6 @@ import UIKit
 
 class BaseViewController: UIViewController, Storyboarded {
     deinit {
-        print("----- DEINIT: \(String(describing: self))")
+        print("[MM][V][-] DEINIT: \(String(describing: self))")
     }
 }

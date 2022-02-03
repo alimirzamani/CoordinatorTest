@@ -16,4 +16,3 @@ class CreateAccountViewController: BaseViewController {
         self.title = "Create Action"
     }
 }
-
