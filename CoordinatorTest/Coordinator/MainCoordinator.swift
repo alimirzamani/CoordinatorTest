@@ -9,8 +9,8 @@ import UIKit
 
 class MainCoordinator: NSObject, Coordinator {
     var rootViewController: BaseViewController!
-
-    var parentCoordinator: MainCoordinator?
+    
+    var parentCoordinator: Coordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
