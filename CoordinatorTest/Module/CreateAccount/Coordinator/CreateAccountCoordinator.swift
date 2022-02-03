@@ -13,8 +13,4 @@ class CreateAccountCoordinator: MainCoordinator {
         navigationController.pushViewController(viewController, animated: true)
         rootViewController = viewController
     }
-
-    deinit {
-        print("---- DEINIT: \(String(describing: self))")
-    }
 }

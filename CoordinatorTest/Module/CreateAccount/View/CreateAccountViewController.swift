@@ -15,9 +15,5 @@ class CreateAccountViewController: BaseViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
         self.title = "Create Action"
     }
-
-    deinit {
-        print("----- DEINIT: \(String(describing: self))")
-    }
 }
 
