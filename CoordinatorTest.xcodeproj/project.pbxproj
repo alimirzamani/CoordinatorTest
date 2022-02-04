@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA9A91427ACEC0900870B72 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91327ACEC0900870B72 /* BaseCoordinator.swift */; };
 		0FE8BE9927ABE401007A7BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8BE9827ABE401007A7BC0 /* AppDelegate.swift */; };
 		0FE8BE9D27ABE401007A7BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8BE9C27ABE401007A7BC0 /* ViewController.swift */; };
 		0FE8BEA027ABE401007A7BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8BE9E27ABE401007A7BC0 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FA9A91327ACEC0900870B72 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		0FE8BE9527ABE401007A7BC0 /* CoordinatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE8BE9827ABE401007A7BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE8BE9C27ABE401007A7BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				0FE8BEAD27ABE4A3007A7BC0 /* Coordinator.swift */,
 				0FE8BEB227ABE635007A7BC0 /* MainCoordinator.swift */,
+				0FA9A91327ACEC0900870B72 /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				0FE8BEC927AC25B0007A7BC0 /* HomeCoordinator.swift in Sources */,
 				0FE8BEC527AC1A32007A7BC0 /* BaseNavigationController.swift in Sources */,
 				0FE8BEB327ABE635007A7BC0 /* MainCoordinator.swift in Sources */,
+				0FA9A91427ACEC0900870B72 /* BaseCoordinator.swift in Sources */,
 				0FE8BE9927ABE401007A7BC0 /* AppDelegate.swift in Sources */,
 				0FE8BEB527ABE943007A7BC0 /* BuyViewController.swift in Sources */,
 			);
