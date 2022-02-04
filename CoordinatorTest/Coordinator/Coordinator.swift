@@ -17,6 +17,12 @@ protocol Coordinator: AnyObject {
 }
 
 extension Coordinator {
+    func resetDelegate() {
+        if let coordinator = self as? UINavigationControllerDelegate {
+            navigationController.delegate = coordinator
+        }
+    }
+
     func childDidFinish() {
         if let coords = parentCoordinator?.childCoordinators.enumerated() {
             for (index, coordinator) in coords where coordinator === self {

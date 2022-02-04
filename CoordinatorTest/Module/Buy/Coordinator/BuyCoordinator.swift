@@ -21,6 +21,7 @@ class BuyCoordinator: NSObject, Coordinator {
         super.init()
 
         self.navigationController.delegate = self
+        print("[MM][C][+] INIT: \(String(describing: self))")
     }
 
     deinit {

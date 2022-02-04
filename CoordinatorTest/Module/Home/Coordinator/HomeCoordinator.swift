@@ -19,8 +19,9 @@ class HomeCoordinator: NSObject, Coordinator {
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         super.init()
-        
+
         self.navigationController.delegate = self
+        print("[MM][C][+] INIT: \(String(describing: self))")
     }
 
     deinit {
