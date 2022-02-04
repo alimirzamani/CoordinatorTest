@@ -11,6 +11,10 @@
 		0FA9A91827ACFA6700870B72 /* PresentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91727ACFA6700870B72 /* PresentCoordinator.swift */; };
 		0FA9A91B27ACFA9400870B72 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91A27ACFA9400870B72 /* PresentViewController.swift */; };
 		0FA9A91D27AD06DB00870B72 /* Present2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91C27AD06DB00870B72 /* Present2ViewController.swift */; };
+		0FA9A92227AD1EB100870B72 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A92127AD1EB100870B72 /* SettingCoordinator.swift */; };
+		0FA9A92527AD1F5B00870B72 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A92427AD1F5B00870B72 /* SettingViewController.swift */; };
+		0FA9A92827AD201C00870B72 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A92727AD201C00870B72 /* TabbarCoordinator.swift */; };
+		0FA9A92B27AD226800870B72 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A92A27AD226800870B72 /* TabbarController.swift */; };
 		0FE8BE9927ABE401007A7BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8BE9827ABE401007A7BC0 /* AppDelegate.swift */; };
 		0FE8BE9D27ABE401007A7BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE8BE9C27ABE401007A7BC0 /* ViewController.swift */; };
 		0FE8BEA027ABE401007A7BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE8BE9E27ABE401007A7BC0 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 		0FA9A91727ACFA6700870B72 /* PresentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCoordinator.swift; sourceTree = "<group>"; };
 		0FA9A91A27ACFA9400870B72 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		0FA9A91C27AD06DB00870B72 /* Present2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present2ViewController.swift; sourceTree = "<group>"; };
+		0FA9A92127AD1EB100870B72 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
+		0FA9A92427AD1F5B00870B72 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0FA9A92727AD201C00870B72 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		0FA9A92A27AD226800870B72 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		0FE8BE9527ABE401007A7BC0 /* CoordinatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE8BE9827ABE401007A7BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE8BE9C27ABE401007A7BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +99,56 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0FA9A91E27AD1E3800870B72 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A92627AD1FFA00870B72 /* Coordinator */,
+				0FA9A92927AD224C00870B72 /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		0FA9A91F27AD1E4900870B72 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A92027AD1EA100870B72 /* Coordinator */,
+				0FA9A92327AD1F4900870B72 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0FA9A92027AD1EA100870B72 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A92127AD1EB100870B72 /* SettingCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0FA9A92327AD1F4900870B72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A92427AD1F5B00870B72 /* SettingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FA9A92627AD1FFA00870B72 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A92727AD201C00870B72 /* TabbarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0FA9A92927AD224C00870B72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA9A92A27AD226800870B72 /* TabbarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0FE8BE8C27ABE401007A7BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				0FE8BEAD27ABE4A3007A7BC0 /* Coordinator.swift */,
-				0FE8BEB227ABE635007A7BC0 /* MainCoordinator.swift */,
 				0FA9A91327ACEC0900870B72 /* BaseCoordinator.swift */,
+				0FE8BEB227ABE635007A7BC0 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -144,7 +202,9 @@
 		0FE8BEB927ABF731007A7BC0 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				0FA9A91E27AD1E3800870B72 /* Tabbar */,
 				0FE8BEC027AC154F007A7BC0 /* Home */,
+				0FA9A91F27AD1E4900870B72 /* Setting */,
 				0FE8BEBA27ABF73D007A7BC0 /* Buy */,
 				0FE8BEBB27ABF747007A7BC0 /* CreateAccount */,
 				0FA9A91527ACFA2A00870B72 /* Present */,
@@ -315,15 +375,19 @@
 				0FE8BEB127ABE4C6007A7BC0 /* Storyboarded.swift in Sources */,
 				0FE8BEC727AC1A5A007A7BC0 /* BaseViewController.swift in Sources */,
 				0FA9A91B27ACFA9400870B72 /* PresentViewController.swift in Sources */,
+				0FA9A92227AD1EB100870B72 /* SettingCoordinator.swift in Sources */,
 				0FE8BEBF27ABF8CC007A7BC0 /* CreateAccountCoordinator.swift in Sources */,
 				0FE8BEC227AC1863007A7BC0 /* Buy2ViewController.swift in Sources */,
 				0FE8BEC927AC25B0007A7BC0 /* HomeCoordinator.swift in Sources */,
 				0FE8BEC527AC1A32007A7BC0 /* BaseNavigationController.swift in Sources */,
 				0FE8BEB327ABE635007A7BC0 /* MainCoordinator.swift in Sources */,
+				0FA9A92B27AD226800870B72 /* TabbarController.swift in Sources */,
 				0FA9A91427ACEC0900870B72 /* BaseCoordinator.swift in Sources */,
 				0FA9A91827ACFA6700870B72 /* PresentCoordinator.swift in Sources */,
 				0FE8BE9927ABE401007A7BC0 /* AppDelegate.swift in Sources */,
+				0FA9A92527AD1F5B00870B72 /* SettingViewController.swift in Sources */,
 				0FE8BEB527ABE943007A7BC0 /* BuyViewController.swift in Sources */,
+				0FA9A92827AD201C00870B72 /* TabbarCoordinator.swift in Sources */,
 				0FA9A91D27AD06DB00870B72 /* Present2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

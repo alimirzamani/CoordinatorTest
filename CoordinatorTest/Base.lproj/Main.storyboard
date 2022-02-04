@@ -58,7 +58,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79.710144927536234" y="105.80357142857143"/>
+            <point key="canvasLocation" x="151" y="-240"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="bn6-kC-4Dd">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="Pbk-Lb-ebO" customClass="SettingViewController" customModule="CoordinatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="djL-rT-ABh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4C1-zo-bkg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdH-My-H0V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="451"/>
         </scene>
         <!--Buy View Controller-->
         <scene sceneID="XgG-YC-6JH">

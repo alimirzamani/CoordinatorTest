@@ -13,6 +13,8 @@ class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationItem.title = "Welcome Home"
     }
 
     @IBAction func buyAction(_ sender: Any) {

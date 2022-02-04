@@ -8,8 +8,9 @@
 import UIKit
 
 class MainCoordinator: BaseCoordinator {
+    // login & not logged in will handle here
     override func start() {
-        let childCoordinator = HomeCoordinator(navigationController: navigationController)
+        let childCoordinator = TabbarCoordinator(navigationController: navigationController)
         childCoordinator.parentCoordinator = self
         childCoordinators.append(childCoordinator)
         childCoordinator.start()

@@ -8,4 +8,13 @@
 import UIKit
 
 class BaseNavigationController: UINavigationController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        navigationBar.standardAppearance = appearance
+        navigationBar.scrollEdgeAppearance = appearance
+    }
 }
