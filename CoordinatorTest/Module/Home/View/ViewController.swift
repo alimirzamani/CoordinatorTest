@@ -22,11 +22,16 @@ class ViewController: BaseViewController {
     @IBAction func createAccountAction(_ sender: Any) {
         didSendEventClosure?(.createAccount)
     }
+
+    @IBAction func presentAction(_ sender: Any) {
+        didSendEventClosure?(.present)
+    }
 }
 
 extension ViewController {
     enum Event {
         case buy
         case createAccount
+        case present
     }
 }

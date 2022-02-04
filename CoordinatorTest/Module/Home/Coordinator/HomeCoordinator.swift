@@ -18,6 +18,8 @@ class HomeCoordinator: BaseCoordinator {
             case .createAccount:
                 self?.createAccount()
 
+            case .present:
+                self?.presentAction()
             }
         }
 
@@ -34,6 +36,15 @@ class HomeCoordinator: BaseCoordinator {
 
     private func createAccount() {
         let childCoordinator = CreateAccountCoordinator(navigationController: navigationController)
+        childCoordinator.parentCoordinator = self
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
+    }
+
+    private func presentAction() {
+        let navController = UINavigationController()
+
+        let childCoordinator = PresentCoordinator(navigationController: navController)
         childCoordinator.parentCoordinator = self
         childCoordinators.append(childCoordinator)
         childCoordinator.start()
