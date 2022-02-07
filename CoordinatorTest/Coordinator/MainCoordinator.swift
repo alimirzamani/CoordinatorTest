@@ -15,15 +15,27 @@ class MainCoordinator: BaseCoordinator {
         let isLoggedIn = appDelegate?.isLoggedIn ?? false
 
         if isLoggedIn {
-            let childCoordinator = TabbarCoordinator(navigationController: navigationController)
-            childCoordinator.parentCoordinator = self
-            childCoordinators.append(childCoordinator)
-            childCoordinator.start()
+            showTabbar()
         } else {
-            let childCoordinator = LoginCoordinator(navigationController: navigationController)
-            childCoordinator.parentCoordinator = self
-            childCoordinators.append(childCoordinator)
-            childCoordinator.start()
+            showLogin()
         }
+    }
+
+    func showTabbar() {
+        cleanUP()
+
+        let childCoordinator = TabbarCoordinator(navigationController: navigationController)
+        childCoordinator.parentCoordinator = self
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
+    }
+
+    func showLogin() {
+        cleanUP()
+
+        let childCoordinator = LoginCoordinator(navigationController: navigationController)
+        childCoordinator.parentCoordinator = self
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start(animated: false)
     }
 }

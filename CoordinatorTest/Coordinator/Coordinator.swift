@@ -31,4 +31,11 @@ extension Coordinator {
             }
         }
     }
+
+    func cleanUP() {
+        childCoordinators.forEach { $0.cleanUP() }
+
+        navigationController.viewControllers.removeAll()
+        childCoordinators.removeAll()
+    }
 }

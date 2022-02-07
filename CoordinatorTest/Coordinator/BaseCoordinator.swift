@@ -28,6 +28,18 @@ class BaseCoordinator: NSObject, Coordinator {
     deinit {
         print("[MM][C][-] DEINIT: \(String(describing: self))")
     }
+
+    func findMain(coordinator: BaseCoordinator) -> MainCoordinator? {
+        if let coordinator = coordinator as? MainCoordinator {
+            return coordinator
+        } else {
+            if let parentCoordinator = coordinator.parentCoordinator {
+                return findMain(coordinator: parentCoordinator)
+            }
+        }
+
+        return nil
+    }
 }
 
 extension BaseCoordinator: UINavigationControllerDelegate {

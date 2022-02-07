@@ -27,8 +27,18 @@ class BuyCoordinator: BaseCoordinator {
     private func secondBuyAction() {
         let viewController = Buy2ViewController.instantiate()
         viewController.didSendEventClosure = { [weak self] event in
-            self?.createAccount()
+            self?.showLogin()
         }
         navigationController.pushViewController(viewController, animated: true)
+    }
+
+    private func showLogin() {
+        guard
+            let parentCoordinator = parentCoordinator,
+            let coordinator = findMain(coordinator: parentCoordinator) else {
+                return
+        }
+
+        coordinator.showLogin()
     }
 }

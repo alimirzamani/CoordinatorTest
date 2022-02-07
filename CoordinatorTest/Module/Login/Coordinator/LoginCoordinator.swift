@@ -8,7 +8,7 @@
 import Foundation
 
 class LoginCoordinator: BaseCoordinator {
-    override func start() {
+    func start(animated: Bool = true) {
         let viewController = LoginViewController.instantiate()
         viewController.didSendEventClosure = { [weak self] event in
             switch event {
@@ -16,7 +16,7 @@ class LoginCoordinator: BaseCoordinator {
                 self?.showSecondPage()
             }
         }
-        navigationController.pushViewController(viewController, animated: true)
+        navigationController.pushViewController(viewController, animated: animated)
         rootViewController = viewController
     }
 
@@ -25,9 +25,19 @@ class LoginCoordinator: BaseCoordinator {
         viewController.didSendEventClosure = { [weak self] event in
             switch event {
             case .verify:
-                print("verified")
+                self?.showTabbar()
             }
         }
         navigationController.pushViewController(viewController, animated: true)
+    }
+
+    private func showTabbar() {
+        guard
+            let parentCoordinator = parentCoordinator,
+            let coordinator = findMain(coordinator: parentCoordinator) else {
+                return
+        }
+
+        coordinator.showTabbar()
     }
 }

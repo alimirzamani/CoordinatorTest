@@ -67,7 +67,7 @@ class TabbarCoordinator: BaseCoordinator {
             self.createTabbarItems(for: item)
         }
 
-        tabBarController.setViewControllers(controllers, animated: true)
+        tabBarController.setViewControllers(controllers, animated: false)
         navigationController.setNavigationBarHidden(true, animated: false)
         navigationController.viewControllers = [tabBarController]
     }
