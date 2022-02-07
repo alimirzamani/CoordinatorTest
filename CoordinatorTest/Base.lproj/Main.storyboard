@@ -136,6 +136,36 @@
             </objects>
             <point key="canvasLocation" x="1814" y="-585"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="hhV-4e-45M">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="FLS-Fm-xea" customClass="LoginViewController" customModule="CoordinatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qge-Xn-Ym1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-Nv-Yae">
+                                <rect key="frame" x="15" y="437.5" width="384" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="verifyAction:" destination="FLS-Fm-xea" eventType="touchUpInside" id="Il2-A6-oJW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CWV-5Z-BMY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Bn0-Nv-Yae" firstAttribute="centerY" secondItem="CWV-5Z-BMY" secondAttribute="centerY" id="Hnr-Z0-usE"/>
+                            <constraint firstItem="CWV-5Z-BMY" firstAttribute="trailing" secondItem="Bn0-Nv-Yae" secondAttribute="trailing" constant="15" id="ecy-je-Mhd"/>
+                            <constraint firstItem="Bn0-Nv-Yae" firstAttribute="leading" secondItem="CWV-5Z-BMY" secondAttribute="leading" constant="15" id="tev-u2-KKN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3d-qx-POe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3430" y="106"/>
+        </scene>
         <!--Present View Controller-->
         <scene sceneID="t2Z-6I-1BY">
             <objects>
@@ -181,6 +211,36 @@
             </objects>
             <point key="canvasLocation" x="1813" y="828"/>
         </scene>
+        <!--Verify View Controller-->
+        <scene sceneID="msb-wF-WQ8">
+            <objects>
+                <viewController storyboardIdentifier="VerifyViewController" id="Zxg-kY-zlm" customClass="VerifyViewController" customModule="CoordinatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GwU-B3-cnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lod-y6-obx">
+                                <rect key="frame" x="15" y="731" width="384" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="verifyAction:" destination="Zxg-kY-zlm" eventType="touchUpInside" id="ifb-uz-WFq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a3d-hA-TAn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a3d-hA-TAn" firstAttribute="trailing" secondItem="lod-y6-obx" secondAttribute="trailing" constant="15" id="Cc5-9r-EKA"/>
+                            <constraint firstItem="lod-y6-obx" firstAttribute="leading" secondItem="a3d-hA-TAn" secondAttribute="leading" constant="15" id="YRM-gJ-oYq"/>
+                            <constraint firstItem="a3d-hA-TAn" firstAttribute="bottom" secondItem="lod-y6-obx" secondAttribute="bottom" constant="100" id="oEh-oR-lPI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZ8-Aa-7Q1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4120" y="106"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
@@ -191,6 +251,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

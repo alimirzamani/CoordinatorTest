@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4FA09127B1359E005AB075 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FA09027B1359E005AB075 /* LoginCoordinator.swift */; };
+		0F4FA09427B135DA005AB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FA09327B135DA005AB075 /* LoginViewController.swift */; };
+		0F4FA09627B135EA005AB075 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4FA09527B135EA005AB075 /* VerifyViewController.swift */; };
 		0FA9A91427ACEC0900870B72 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91327ACEC0900870B72 /* BaseCoordinator.swift */; };
 		0FA9A91827ACFA6700870B72 /* PresentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91727ACFA6700870B72 /* PresentCoordinator.swift */; };
 		0FA9A91B27ACFA9400870B72 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A91A27ACFA9400870B72 /* PresentViewController.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F4FA09027B1359E005AB075 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		0F4FA09327B135DA005AB075 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0F4FA09527B135EA005AB075 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		0FA9A91327ACEC0900870B72 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		0FA9A91727ACFA6700870B72 /* PresentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCoordinator.swift; sourceTree = "<group>"; };
 		0FA9A91A27ACFA9400870B72 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4FA08C27B13431005AB075 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FA08D27B13454005AB075 /* Coordinator */,
+				0F4FA09227B135C7005AB075 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0F4FA08D27B13454005AB075 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FA09027B1359E005AB075 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0F4FA09227B135C7005AB075 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FA09327B135DA005AB075 /* LoginViewController.swift */,
+				0F4FA09527B135EA005AB075 /* VerifyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0FA9A91527ACFA2A00870B72 /* Present */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +240,7 @@
 				0FE8BEBA27ABF73D007A7BC0 /* Buy */,
 				0FE8BEBB27ABF747007A7BC0 /* CreateAccount */,
 				0FA9A91527ACFA2A00870B72 /* Present */,
+				0F4FA08C27B13431005AB075 /* Login */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -371,10 +404,13 @@
 				0FE8BEB727ABE95D007A7BC0 /* CreateAccountViewController.swift in Sources */,
 				0FE8BEAE27ABE4A3007A7BC0 /* Coordinator.swift in Sources */,
 				0FE8BE9D27ABE401007A7BC0 /* ViewController.swift in Sources */,
+				0F4FA09427B135DA005AB075 /* LoginViewController.swift in Sources */,
 				0FE8BEBD27ABF7B1007A7BC0 /* BuyCoordinator.swift in Sources */,
+				0F4FA09127B1359E005AB075 /* LoginCoordinator.swift in Sources */,
 				0FE8BEB127ABE4C6007A7BC0 /* Storyboarded.swift in Sources */,
 				0FE8BEC727AC1A5A007A7BC0 /* BaseViewController.swift in Sources */,
 				0FA9A91B27ACFA9400870B72 /* PresentViewController.swift in Sources */,
+				0F4FA09627B135EA005AB075 /* VerifyViewController.swift in Sources */,
 				0FA9A92227AD1EB100870B72 /* SettingCoordinator.swift in Sources */,
 				0FE8BEBF27ABF8CC007A7BC0 /* CreateAccountCoordinator.swift in Sources */,
 				0FE8BEC227AC1863007A7BC0 /* Buy2ViewController.swift in Sources */,
